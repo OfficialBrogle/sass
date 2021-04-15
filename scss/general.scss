@@ -2,13 +2,20 @@
 // GENERAL
 // --------------------------
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: box-sizing;
+    box-sizing: box-sizing;
 }
 
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
+}
+
+section {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -21,6 +28,12 @@ body {
     }
     text-align: center;
     margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    ;
+    padding: 0 16px
 }
 
 a {

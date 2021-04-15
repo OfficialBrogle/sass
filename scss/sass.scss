@@ -1,9 +1,3 @@
-aside,
-footer,
-.content>:not(h1) {
-    display: none;
-}
-
 @import '_variables';
 
 /*podtržítko proto, aby se nevytvořil zástupce css*/
@@ -13,3 +7,4 @@ footer,
 @import 'header'; //navigation
 @import 'colors'; //content colors
 @import 'content'; //content rules
+@import 'mixins';
