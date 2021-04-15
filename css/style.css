@@ -1,3 +1,4 @@
+@charset "UTF-8";
 aside,
 footer,
 .content > :not(h1) {
@@ -5,6 +6,7 @@ footer,
 }
 
 /******************************/
+/*podtržítko proto, aby se nevytvořil zástupce css*/
 html {
   box-sizing: border-box;
 }
@@ -64,11 +66,6 @@ h1 {
 }
 .site-header a:hover, .site-header a:focus {
   color: #9d9d9d;
-}
-
-.content {
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .home main {
@@ -165,5 +162,9 @@ main {
         color: darken($color-bg-contact, 15%);
     }
 }*/
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */

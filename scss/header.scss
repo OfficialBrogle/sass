@@ -1,0 +1,15 @@
+//
+// SITE MANAGES
+// --------------------------
+.site-header {
+    background: fff;
+    a {
+        color: $color-muted;
+        font-style: 13px;
+        padding: 24px 0;
+        &:hover,
+        &:focus {
+            color: lighten($color-muted, 15%);
+        }
+    }
+}
