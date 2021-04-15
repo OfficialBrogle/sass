@@ -1,0 +1,179 @@
+aside,
+footer,
+.content>:not(h1) {
+    display: none;
+}
+
+//
+// VARIABLES
+// --------------------------
+$font-size-base: 100%;
+$font-family-sans: Montserrat,
+sans-serif;
+$font-family-serif: 'Big Caslon',
+Georgia,
+serif;
+$color-text: #fff;
+$color-muted: #777;
+$color-bg-body: #2f313c;
+$color-bg-home: #8fd2d1;
+$color-bg-gallery: #ffd256;
+$color-bg-blog: #019dcd;
+$color-bg-contact: #fd685b;
+
+/******************************/
+
+$page-colors:( 'home':#8fd2d1, 'gallery':#ffd256, 'blog':#019dcd, 'contact':#fd685b, );
+//
+// GENERAL
+// --------------------------
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $color-text;
+    background: $color-bg-body;
+    font: {
+        size: $font-size-base;
+        family: $font-family-sans;
+        weight: normal;
+    }
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.menu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    li,
+    a {
+        display: inline-block;
+        margin-right: 10%;
+    }
+}
+
+//
+// TYPOGRAPHY
+// --------------------------
+h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+//
+// SITE MANAGES
+// --------------------------
+.site-header {
+    background: fff;
+    a {
+        color: $color-muted;
+        font-style: 13px;
+        padding: 24px 0;
+        &:hover,
+        &:focus {
+            color: lighten($color-muted, 15%);
+        }
+    }
+}
+
+//
+// CONTENT
+// --------------------------
+.content {
+    padding: {
+        top: 80px;
+        bottom: 80px;
+    }
+}
+
+//
+//ZJEDNODUŠENÝ ZÁPIS BAREV (zápisu pod tím)
+//-----------------------------
+@each $page,
+$color in $page-colors {
+    .#{$page} {
+        main {
+            background: $color;
+            border-top: 1px solid darken($color, 10%);
+        }
+        .shadow {
+            text-shadow: 1px 1px 0px darken($color, 10%)
+        }
+        .active a {
+            color: darken($color, 25%)
+        }
+    }
+}
+
+
+/*
+
+main {
+    background: $color-bg-home;
+    border-top: 3px solid darken($color-bg-home, 10%);
+    .blog & {
+        background: $color-bg-blog;
+        border-color: darken($color-bg-blog, 8%)
+    }
+    .contact & {
+        background: $color-bg-contact;
+        border-color: darken($color-bg-contact, 15%)
+    }
+    .gallery & {
+        background: $color-bg-gallery;
+        border-color: darken($color-bg-gallery, 15%);
+    }
+}
+
+//
+// SHADOW
+// --------------------------
+.shadow {
+    text-shadow: -1px 1px 0px darken($color-bg-home, 10%);
+    .gallery & {
+        text-shadow: -1px 1px 0px darken($color-bg-gallery, 10%);
+    }
+    .blog & {
+        text-shadow: -1px 1px 0px darken($color-bg-blog, 10%);
+    }
+    .contact & {
+        text-shadow: -1px 1px 0px darken($color-bg-contact, 15%);
+    }
+}
+
+//
+// ACTIVE NAVIGATION LINK COLOR
+// --------------------------
+.active a {
+    color: darken($color-bg-home, 25%);
+    .gallery & {
+        color: darken($color-bg-gallery, 25%);
+    }
+    .blog & {
+        color: darken($color-bg-blog, 5%);
+    }
+    .contact & {
+        color: darken($color-bg-contact, 15%);
+    }
+}*/

@@ -1,0 +1,169 @@
+aside,
+footer,
+.content > :not(h1) {
+  display: none;
+}
+
+/******************************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #fff;
+  background: #2f313c;
+  font-size: 100%;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: .2s all ease-in-out;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.menu li,
+.menu a {
+  display: inline-block;
+  margin-right: 10%;
+}
+
+h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.site-header {
+  background: fff;
+}
+.site-header a {
+  color: #777;
+  font-style: 13px;
+  padding: 24px 0;
+}
+.site-header a:hover, .site-header a:focus {
+  color: #9d9d9d;
+}
+
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.home main {
+  background: #8fd2d1;
+  border-top: 1px solid #6bc3c2;
+}
+.home .shadow {
+  text-shadow: 1px 1px 0px #6bc3c2;
+}
+.home .active a {
+  color: #41a19f;
+}
+
+.gallery main {
+  background: #ffd256;
+  border-top: 1px solid #ffc423;
+}
+.gallery .shadow {
+  text-shadow: 1px 1px 0px #ffc423;
+}
+.gallery .active a {
+  color: #d69d00;
+}
+
+.blog main {
+  background: #019dcd;
+  border-top: 1px solid #01769a;
+}
+.blog .shadow {
+  text-shadow: 1px 1px 0px #01769a;
+}
+.blog .active a {
+  color: #003c4e;
+}
+
+.contact main {
+  background: #fd685b;
+  border-top: 1px solid #fc3a29;
+}
+.contact .shadow {
+  text-shadow: 1px 1px 0px #fc3a29;
+}
+.contact .active a {
+  color: #d61403;
+}
+
+/*
+
+main {
+    background: $color-bg-home;
+    border-top: 3px solid darken($color-bg-home, 10%);
+    .blog & {
+        background: $color-bg-blog;
+        border-color: darken($color-bg-blog, 8%)
+    }
+    .contact & {
+        background: $color-bg-contact;
+        border-color: darken($color-bg-contact, 15%)
+    }
+    .gallery & {
+        background: $color-bg-gallery;
+        border-color: darken($color-bg-gallery, 15%);
+    }
+}
+
+//
+// SHADOW
+// --------------------------
+.shadow {
+    text-shadow: -1px 1px 0px darken($color-bg-home, 10%);
+    .gallery & {
+        text-shadow: -1px 1px 0px darken($color-bg-gallery, 10%);
+    }
+    .blog & {
+        text-shadow: -1px 1px 0px darken($color-bg-blog, 10%);
+    }
+    .contact & {
+        text-shadow: -1px 1px 0px darken($color-bg-contact, 15%);
+    }
+}
+
+//
+// ACTIVE NAVIGATION LINK COLOR
+// --------------------------
+.active a {
+    color: darken($color-bg-home, 25%);
+    .gallery & {
+        color: darken($color-bg-gallery, 25%);
+    }
+    .blog & {
+        color: darken($color-bg-blog, 5%);
+    }
+    .contact & {
+        color: darken($color-bg-contact, 15%);
+    }
+}*/
+
+/*# sourceMappingURL=style.css.map */
